@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 196725537}
   - component: {fileID: 196725536}
   - component: {fileID: 196725535}
+  - component: {fileID: 196725539}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -220,6 +221,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &196725539
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 196725534}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &469463864
 GameObject:
   m_ObjectHideFlags: 0
@@ -412,7 +429,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1001967244}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28a79ae28bfbb244683f6ffbba27701c, type: 3}
   m_Name: 
@@ -452,9 +469,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cube: {fileID: 1507770485}
+  _cubeRig: {fileID: 1507770490}
+  _cubeBox: {fileID: 0}
   _sphere: {fileID: 196725534}
+  _sphereRig: {fileID: 196725539}
   _capsule: {fileID: 2042942547}
+  _capsuleRig: {fileID: 2042942552}
   _cylinder: {fileID: 1744767196}
+  _cylinderRig: {fileID: 1744767201}
+  _text: 
+  _number: 1
+  _check: 1
 --- !u!1 &1389289528
 GameObject:
   m_ObjectHideFlags: 0
@@ -516,6 +541,7 @@ GameObject:
   - component: {fileID: 1507770488}
   - component: {fileID: 1507770487}
   - component: {fileID: 1507770486}
+  - component: {fileID: 1507770490}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -601,6 +627,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &1507770490
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1507770485}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1744767196
 GameObject:
   m_ObjectHideFlags: 0
@@ -613,6 +655,7 @@ GameObject:
   - component: {fileID: 1744767199}
   - component: {fileID: 1744767198}
   - component: {fileID: 1744767197}
+  - component: {fileID: 1744767201}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -699,6 +742,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &1744767201
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1744767196}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &2042942547
 GameObject:
   m_ObjectHideFlags: 0
@@ -711,6 +770,7 @@ GameObject:
   - component: {fileID: 2042942550}
   - component: {fileID: 2042942549}
   - component: {fileID: 2042942548}
+  - component: {fileID: 2042942552}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -797,6 +857,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &2042942552
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2042942547}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &2089464032
 GameObject:
   m_ObjectHideFlags: 0
